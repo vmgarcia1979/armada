@@ -1,0 +1,29 @@
+server {
+	listen 80 default_server;
+	
+	root /home/user/git/armada/public/app;
+	index index.html index.htm;
+
+	server_name localhost;
+
+	location /bower_components/ {
+		root /home/user/git/armada/public/;
+	}
+
+	location / {
+		root /home/user/git/armada/public/app;
+	}
+}
+
+server {
+	listen 81;
+	
+	root /home/user/git/armada/public/app;
+	index index.html index.htm;
+
+	server_name localhost;
+
+	location / {
+		root /home/user/git/armada/public/dist;
+	}
+}

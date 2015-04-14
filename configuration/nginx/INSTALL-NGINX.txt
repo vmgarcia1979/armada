@@ -1,0 +1,7 @@
+Para desarrollo usamos la configuración de default en lugar del servidor que nos da yeoman
+
+http://localhost:80
+
+Para probar el resultado de crear el dist usamos el puerto 81
+
+http://localhost:81
